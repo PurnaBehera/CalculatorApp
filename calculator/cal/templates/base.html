@@ -1,0 +1,38 @@
+
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-12">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <div>
+                        <label for="">Value1</label>
+                        <input type="text" name="num1" id="" class="form-control">
+                    </div>
+                    <div>
+                        <label for="">Select operator:</label>
+                        <select name="opr" id="">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                        <option value="%">%</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Value2</label>
+                        <input type="text" name="num2" id="" >
+                    </div>
+                    <div>
+                        <button type="submit">Submit</button>
+                        <label for="">Output:</label>
+                        <input type="text" value="{{c}}">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
